@@ -1,6 +1,6 @@
 # Groovin
 
-Groovin is a library bringing the power of CSS transitions to Javascript objects.
+Groovin is a library bringing the power of CSS transitions to Javascript objects.\
 Just define the transitions like you would do in CSS and Groovin will do the rest for you!
 
 Here is a basic example:
@@ -145,36 +145,40 @@ Here is a list of all easing functions included, and their default parameter:
 - bounce-out
 - bounce-inout
 
-Example: `1.5s sine-out 0.3s` (easing is sine-out
-Or: `500ms back-out(1.5) 200ms` (easing in back-out with optional parameter 1.5)
+*Example: `1.5s sine-out 0.3s` (easing is sine-out)*\
+*Or: `500ms back-out(1.5) 200ms` (easing in back-out with optional parameter 1.5)*
 
 You can find a reference to the easing functions used here: [https://easings.net/](https://easings.net/)
 
 ### Styles
 
-Predefined styles are optional and are of type:
+Predefined styles are optional follow this format:
+```javascript
 {
-    name: {
+    nameOfStyle: {
         property: value,
         ...
     },
-    name2: {
+    nameOfStyle2: {
         property: value,
         ...
     },
     ...
 }
-
+```
+\
 Example:
 ```javascript
 groovin.bind(obj, {
-    width: '1s circ-out',
-    height: '0.5s sine-in 0.5s',
+    width: '1s circ-out', // transition for "width" property
+    height: '0.5s sine-in 0.5s', // transition for "height" property
 }, {
+    // style "normal"
     normal: {
         width: 50,
         height: 50,
     },
+    // style "big"
     big: {
         width: 200,
         height: 200,
@@ -184,7 +188,7 @@ groovin.bind(obj, {
 // and you can switch between the different styles by calling:
 groovin.style(obj, 'big');
 ```
-
+\
 Usage example with all the parameters:
 
 ```javascript
