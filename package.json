@@ -1,19 +1,19 @@
 {
   "name": "groovin",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "animate javascript objects",
   "main": "/dist/groovin.js",
   "module": "./dist/groovin.mjs",
   "types": "./dist/groovin.d.ts",
   "author": "Nicolas Bouvet <hi@nico-boo.com> (https://nico-boo.com)",
   "license": "MIT",
-  "homepage": "https://github.com/titoasty/zmooth",
+  "homepage": "https://github.com/titoasty/groovin",
   "bugs": {
-    "url": "https://github.com/titoasty/zmooth/issues"
+    "url": "https://github.com/titoasty/groovin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/titoasty/zmooth.git"
+    "url": "https://github.com/titoasty/groovin.git"
   },
   "scripts": {
     "build": "tsup && tsup --minify",
